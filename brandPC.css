@@ -1,0 +1,219 @@
+*{ margin:0; padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
+li{    list-style:none;
+}
+.page-wrap{
+    background: #000017 url("百+榜背景不带球.png") no-repeat center 0;
+    background-size: cover;
+}
+.page-bg{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.content-wrap{
+    width:850px;
+    margin: auto;
+    padding-top:575px;
+    position: relative;
+    text-align: center;
+}
+.side-wrap{
+    position: absolute;
+    top:688px;
+    left:-160px;
+    width: 120px;color: #457eff;
+}
+.side-wrap .side-list{
+    border:1px solid #457eff;
+}
+.side-wrap .side-list li{
+    cursor: pointer;
+    height: 44px;line-height: 44px;border-bottom: 1px solid #457eff;
+}
+.side-wrap .side-list li:last-child{ border-bottom: 0;}
+.side-wrap .side-list a:hover{
+    color:#fff;
+}
+.side-wrap .side-list li a{color: #457eff;text-decoration: none;}
+.side-wrap .share-box{
+    cursor: pointer;
+}
+.side-wrap .share-box:hover .two-code{
+    display: block;
+}
+.side-wrap .share-box .share-icon{
+    width: 32px;
+    height:32px;
+    background: url("wx-icon.png") no-repeat center center;
+    background-size: 100%;
+    margin: 20px auto 0 auto;
+}
+.side-wrap .share-box .two-code{
+    display: none;
+    width: 102px;height: 102px;background-color: #fff;margin: 15px auto 0 auto;position: relative;
+}
+.side-wrap .share-box .two-code:before{
+    position: absolute;
+    top:-8px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 8px 6px;
+    border-color: transparent transparent #fff transparent;
+
+}
+.plan-des{
+    margin-top: 36px;font-size: 16px;color:#F1F1F1;line-height: 30px;
+}
+.plan-des span{
+    color:#467CEF;
+}
+.reward-wrap{
+    /*margin:54px -25px 0 -25px;*/
+    margin: 54px -35px 0 -35px;
+}
+.reward-wrap li{
+    display: inline-block;
+    margin:0 35px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.reward-wrap li:before{
+    width: 148px;
+    content: '';
+    display: block;
+    height:128px;
+    margin-bottom: 20px;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+.reward-wrap li:nth-child(1):before{
+    background-image: url("01.png");
+}
+.reward-wrap li:nth-child(2):before{
+    background-image: url("02.png");
+}
+.reward-wrap li:nth-child(3):before{
+    background-image: url("03.png");
+}
+.reward-wrap li:nth-child(4):before{
+    background-image: url("04.png");
+}
+.reward-wrap li p{ color: #F1F1F1;}
+
+/*join*/
+.join-plan-box{ margin-top: 110px;}
+.process-list-wrap{
+    /*margin:44px 20px 0 20px;*/
+    margin-top:44px;
+    overflow: hidden;background-color: rgba(15,15,37,0.4);vertical-align: middle;
+}
+.process-list-wrap li{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+}
+.process-list-wrap li:nth-child(odd){
+     padding:45px 50px 40px 50px;
+ }
+.process-list-wrap li:nth-child(even){
+    width: 36px;
+    height: 38px;
+    background: url("icon-arrow.png") no-repeat center center;
+    background-size: 100%;
+}
+.process-list-wrap li a{ color: #457eff;}
+.reward-got-title{
+    font-size: 24px;color: #457eff;margin-top: 64px;
+}
+.article{ max-width: 650px;
+    margin:18px auto 0 auto;font-size: 16px;color: #ffffff;}
+.article p{ line-height: 30px;min-height: 30px;}
+
+/*month*/
+.month-rank-box{ margin-top: 65px;}
+.month-desc{ font-size: 14px;color: #7c7c7c;
+    margin:40px 0;}
+.rank-list-box{
+    max-height:450px;overflow: scroll;padding-bottom: 45px;margin: 0 20px;
+    font-size: 14px;
+    padding-right: 30px;
+    background-color: rgba(102,102,116,0.15);
+}
+/*table*/
+.rank-list-box table{
+    width: 100%;
+}
+.rank-list-box tr.rank-title{
+    font-size: 16px;
+    height:53px;line-height: 53px;color: #ffffff; border-collapse: collapse;
+}
+tr.rank-title .cell-1{ width: 98px;}
+tr.rank-title .cell-2{ width: 230px;}
+tr.rank-title .cell-3{ width: 135px;}
+tr.rank-title .cell-4{ width: 155px;}
+tr.rank-title .cell-5{ }
+
+/*div*/
+.rank-list-box ul{ height: 50px;margin-top: 20px;display: flex;justify-content:center;align-items:center;font-size: 14px;color: #467fff;}
+.rank-list-box ul.title{
+    margin-top: 0;margin-right: -30px;
+    font-size: 16px;height:53px;line-height: 53px;color: #ffffff;border-bottom: 1px solid #151d44;
+}
+.rank-list-box ul li .line{ width: 112px; height:4px; display: inline-block;vertical-align: middle;}
+.line .add-color{ height: 2px;}
+
+.original-count .line{ border:1px solid #734b0b;}
+.original-count .line .add-color{ width: 50%;background-color: #734b0b;}
+
+.content-quality .line{ border:1px solid #4f339e;}
+.content-quality .line .add-color{ width: 50%;background-color: #4f339e;}
+
+.active-level .line{ border:1px solid #196576;}
+.active-level .line .add-color{ width: 50%;background-color: #196576;}
+
+.rank-list-box ul li .icon-num{
+    width: 29px;
+    height:41px;
+    display: inline-block;
+    background: no-repeat center 0;
+    background-size: 100% 100%;vertical-align: middle;
+}
+.rank-list-box ul li .num1{ background-image: url("no.1.png")}
+
+.rank-list-box ul.title .cell-2{ padding-left: 60px;}
+.rank-list-box ul .cell-1{ width: 98px;}
+.rank-list-box ul .cell-2{ width: 240px;text-align: left;padding-left: 10px;}
+.rank-list-box ul .cell-3{ flex:1;}
+.rank-list-box ul .cell-4{ flex:1;}
+.rank-list-box ul .cell-5{ flex:1;}
+.rank-list-box ul .user-box{ }
+.rank-list-box ul .user-box .user-img,.user-name{ display: inline-block;}
+.user-img{
+    width: 50px;
+    height:50px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius:100%;
+    vertical-align: middle;
+    margin-right:14px;
+    background: url(http://s3.mogucdn.com/p2/170610/upload_5ac1ii9gf08fhfk9kilg7e92lbi9a_300x300.jpg_750x750.v1cNF.jpg) no-repeat center 0;background-size: cover;
+}
+.user-name a{color: #467fff;}
+
+.footer{ color: #ffffff;font-size: 14px;
+    padding:60px 0 99px 0;text-align: center;}
+.footer a{ color: #457eff;}
